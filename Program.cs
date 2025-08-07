@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-public readonly ref struct TestStruct(int n) //: IEquatable<TestStruct>
+public readonly ref struct TestStruct(int n) : IEquatable<TestStruct>
 {
 	public readonly int N
 		=> n;
